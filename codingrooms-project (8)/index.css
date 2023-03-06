@@ -1,0 +1,110 @@
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(224, 16, 16);
+font-size:50px;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+color:blue
+}
+
+/* Top left text */
+.top-left {
+  position: centerd;
+  top: 8px;
+  left: 16px;
+ word-wrap: break-word;
+color:brown
+}
+
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+color:blueviolet
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  transform: translate(40%, -60%);
+  color:red
+
+}
+h4 {font-family: 'Mukta', sans-serif;
+top: 50%;
+left:-90%;
+transform: translate(30%, -70%);
+color:blueviolet
+}
+h2{
+    font-family: 'Mukta', sans-serif;
+    }
+    body {
+  background-color: rgb(245, 253, 255);
+}
+<style>
+.scroll-left {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: yellow;
+ color: orange;
+ border: 1px solid orange;
+}
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-left 15s linear infinite;
+ -webkit-animation: scroll-left 15s linear infinite;
+ animation: scroll-left 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
+</style>
+
